@@ -35,6 +35,10 @@ namespace WebCRUDMVC.Migrations
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("Name");
 
+                    b.Property<float>("Price")
+                        .HasColumnType("real")
+                        .HasColumnName("Price");
+
                     b.HasKey("Id");
 
                     b.ToTable("product");

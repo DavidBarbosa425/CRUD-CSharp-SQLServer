@@ -11,7 +11,7 @@ using WebCRUDMVC.Models;
 namespace WebCRUDMVC.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20220128221620_Initial")]
+    [Migration("20220129151213_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -36,6 +36,10 @@ namespace WebCRUDMVC.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("Name");
+
+                    b.Property<float>("Price")
+                        .HasColumnType("real")
+                        .HasColumnName("Price");
 
                     b.HasKey("Id");
 

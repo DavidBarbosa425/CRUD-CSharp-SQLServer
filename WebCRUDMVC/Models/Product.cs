@@ -13,5 +13,9 @@ namespace WebCRUDMVC.Models
         [Column("Name")]
         [Display(Name = "Name")]
         public string Name { get; set; }
+
+        [Column("Price")]
+        [Display(Name = "Price")]
+        public float Price { get; set; }
     }
 }
